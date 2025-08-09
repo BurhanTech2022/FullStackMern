@@ -19,7 +19,7 @@ const options = {
     },
     servers: [
       {
-        url: 'http://localhost:4000/api'
+        url: process.env == 'development'?'http://localhost:4000/api': "https://fullstackmern-7n4k.onrender.com"
       }
     ],
     components: {
