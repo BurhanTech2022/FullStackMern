@@ -1,0 +1,6 @@
+- [✅] Github initialization
+- [✅] Mongo Atlas
+- [✅] Render deployment
+- [✅] Enviroment variables
+- [✅] Git ignore
+- 
