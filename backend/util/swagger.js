@@ -18,10 +18,14 @@ const options = {
       description: 'API documentation for our transaction manager'
     },
     servers: [
-      {
-        url: process.env == 'development'?'http://localhost:4000/api': "https://fullstackmern-7n4k.onrender.com"
-      }
-    ],
+  {
+    url:
+      process.env.NODE_ENV === 'development'
+        ? 'http://localhost:4000/api'
+        : 'https://fullstackmern-7n4k.onrender.com/api' // make sure to include `/api` if your routes are prefixed
+  }
+],
+
     components: {
       securitySchemes: {
         bearerAuth: {
