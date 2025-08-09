@@ -11,19 +11,6 @@ const api = axios.create({
 })
 
 
-// Interceptor to add the Authorization header
-
-// api.interceptors.request.use((config) => {
-
-//     const token = useAuthStore.getState().token;
-
-//     if (token) {
-//         config.headers.Authorization = `Bearer ${token}`;
-//     }
-
-//     return config;
-// })
-
 api.interceptors.request.use((config) => {
   const token = useAuthStore.getState().token;
   console.log("Current token in request:", token); // 👀 check this
